@@ -1,0 +1,45 @@
+import java.util.Date;
+
+public class Customer {
+    private String fullName;
+    private Date dateOfBirth;
+    private String address;
+    private Date registrationDate;
+    private String nationality;
+
+    public void enterInformation(String fullName, Date dateOfBirth, String address, Date registrationDate, String nationality) {
+        this.fullName = fullName;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.registrationDate = registrationDate;
+        this.nationality = nationality;
+    }
+
+    public void displayInformation() {
+        System.out.println("Full Name: " + fullName);
+        System.out.println("Date of Birth: " + dateOfBirth);
+        System.out.println("Address: " + address);
+        System.out.println("Registration Date: " + registrationDate);
+        System.out.println("Nationality: " + nationality);
+    }
+
+    // Getter for fullName (restricted access)
+    private String getFullName() {
+        return fullName;
+    }
+
+    // Getter for dateOfBirth (restricted access)
+    private Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public static void main(String[] args) {
+        Customer customer1 = new Customer();
+        customer1.enterInformation
+        customer1.displayInformation();
+
+        Customer customer2 = new Customer();
+        customer2.enterInformation()
+        customer2.displayInformation();
+    }
+}
